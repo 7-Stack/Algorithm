@@ -13,16 +13,16 @@ class Shape {
     }
 }
     class Rectangle extends Shape {
-    constructor(color, width, height) {
+    constructor(color) {
         super(color);
-        this.width = width;
-        this.height = height;
+        this.width = 'width'
+        this.height = 'height'
     }
     getArea() {
         return this.width * this.height;
     }
     toString() {
-        return `This shape is ${this.color} and has a width of ${this.width} and a height of {this.height}.;`
+        return `This shape is ${this.color} and has a width of ${this.width} and a height of ${this.height}.;`
     } 
     }
  class Circle extends Shape {
@@ -34,7 +34,7 @@ class Shape {
         return Math.Pi * radius ^ 2
     }
     toString() {
-        return `This shape is ${this.color} and has a radius of ${this.radius}.;`
+        return `This shape is ${this.color} and has a Pi of ${this.Math.Pi} and has a radius of ${this.radius ^2}.;`
     }
 }
 
@@ -59,3 +59,6 @@ const triangle = new Triangle('Ash', 10, 20);
 console.log(`Is rectangle an instance of Rectangle?`, rectangle instanceof Rectangle);
 console.log(`Is circle an instance of Circle?`, circle instanceof Circle);
 console.log(`Is triangle an instance of Triangle?`, triangle instanceof Triangle);
+console.log(rectangle);
+console.log(circle);
+console.log(triangle);
